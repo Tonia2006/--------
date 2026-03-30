@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Marck+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom, #FFF0F5, #FFE4E1);
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+h1{
+    text-align: right;
+    background-image: linear-gradient(to right, #FFF0F5, #FFE4E1);
+    padding: 10px;
+    border-radius: 25px;
+
+}
+
+.double{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFE4E1;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.exemple{
+    background-image: linear-gradient(to bottom, #ffe4e1, #FFB6C1);
+    padding: 10px;
+    border-radius: 25px;
+    border: 5px solid white;
+    text-align: center;
+    align-items: center;
+    height: 380px;
+    width: 240px;
+    margin: 10px;
+}
