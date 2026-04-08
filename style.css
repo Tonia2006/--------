@@ -22,6 +22,42 @@ h1{
     background-color: #FFE4E1;
     padding: 10px;
     border-radius: 25px;
+    min-width: 200px;
+}
+
+.double button{
+    margin: 5px;
+}
+
+.double button:hover{
+    background-color: #FFB6C1;
+    width: 85px;
+}
+
+summary:first-child{
+    text-decoration: underline;
+}
+
+input{
+    border-radius: 5px;
+    border: #F0F8FF;
+    font-size: 18px;
+    transition: 1s;
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+
+}
+
+
+
+input:focus{
+    background-color: #FFB6C1;
+    border: #FFB6C1;
+
 }
 
 .exemple{
@@ -34,4 +70,35 @@ h1{
     height: 380px;
     width: 240px;
     margin: 10px;
+    transition: 1s;
+}
+
+.exemple:hover{
+    height: 400px;
+    width: 260px;
+}
+
+button{
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: #F0F8FF;
+    font-size: 15px;
+    width: auto;
+    transition: 1s;
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+    
+}
+
+.block button:hover{
+    background-color: #ffe4e1;
+    width: 85px;
+    
 }
