@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const schemes=[
-
+        {
+            name: "",
+            img: "",
+            type: ""
+        }
     ]
 
     function addScheme(){
