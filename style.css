@@ -107,3 +107,9 @@ button{
     background-color: #FFE4E1;
     width: 85px;
 }
+
+.library{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

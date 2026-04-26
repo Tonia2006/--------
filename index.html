@@ -10,22 +10,31 @@
     <header>
         <h1>Схеми для в'язання</h1>
     </header>
-    <body>
+    <main>
         <section class="double">
             <article class="choice">
-                <details>
-                    <summary>Тип</summary>
-                    <summary><input type="checkbox" id="clothing" value="clothing">Одяг</summary>
-                    <summary><input type="checkbox" id="toy" value="toy">Іграшка</summary>
-                    <summary><input type="checkbox" id="grannySquar" value="grannySquar">Бабусин квадрат</summary>
-                </details>
+                    <details>
+                        <summary>Тип</summary>
+                    
+                        <label>
+                            <input type="checkbox" value="clothing"> Одяг
+                        </label><br>
+                    
+                        <label>
+                            <input type="checkbox" value="toy"> Іграшка
+                        </label><br>
+                    
+                        <label>
+                            <input type="checkbox" value="grannySquar"> Бабусин квадрат
+                        </label>
+                    </details>
                 <button class="find">Знайти</button>
             </article>
             <article class="add">
-                <form>
-                    <input type="text", id="name", placeholder="Введіть назву виробу">
-                    <input type="img", id="image", placeholder="Додайте посилання на схему">
-                    <input type="text", id="type", placeholder="Введіть тип виробу">
+                <form onsubmit="return false;">
+                    <input type="text" id="name" placeholder="Введіть назву виробу">
+                    <input type="text" id="image" placeholder="Додайте посилання на схему">
+                    <input type="text" id="type" placeholder="Введіть тип виробу англійською (clothing, toy, grannySquar">
                 </form>
                 <button class="create">Додати</button>
             </article>
@@ -38,7 +47,7 @@
                 <button>Перейти</button>
             </div>
         </section>
-    </body>
-
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
