@@ -113,3 +113,7 @@ button{
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+#type{
+    width: 368px;
+}
