@@ -78,4 +78,17 @@ document.addEventListener("DOMContentLoaded", () => {
     
         filtered.forEach(create_block)
     }
+
+    function downloadJSON() {
+        const dataStr = JSON.stringify(schemes, null, 2)
+        const blob = new Blob([dataStr], { type: "application/json" })
+    
+        const a = document.createElement("a")
+        a.href = URL.createObjectURL(blob)
+        a.download = "schemes.json"
+        a.click()
+    }
+
+    downloadJSON()
+
 })
