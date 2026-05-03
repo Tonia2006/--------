@@ -46,9 +46,14 @@ document.addEventListener("DOMContentLoaded", () => {
         type.classList.add("type")
         type.textContent = "Тип: " + scheme.type
 
+        const del = document.createElement('button')
+        del.classList.add("delete")
+        del.textContent = "Видалити"
+
         block.appendChild(name)
         block.appendChild(img)
         block.appendChild(type)
+        block.appendChild(del)
         
         library.appendChild(block)
     }
@@ -56,6 +61,24 @@ document.addEventListener("DOMContentLoaded", () => {
     for (let i = 0; i < schemes.length; i += 1) {
         create_block(schemes[i])
     }
+
+    function deleteScheme(scheme) {
+        const index = schemes.indexOf(scheme)
+    
+        if (index !== -1) {
+            schemes.splice(index, 1)
+        }
+
+        localStorage.setItem("schemes", JSON.stringify(schemes))
+
+        library.innerHTML = ""
+
+        schemes.forEach(create_block)
+    }
+
+    deleteBtn.addEventListener("click", () => {
+        deleteScheme(scheme)
+    })
 
     const findBtn = document.querySelector(".find")
 
@@ -78,17 +101,5 @@ document.addEventListener("DOMContentLoaded", () => {
     
         filtered.forEach(create_block)
     }
-
-    function downloadJSON() {
-        const dataStr = JSON.stringify(schemes, null, 2)
-        const blob = new Blob([dataStr], { type: "application/json" })
-    
-        const a = document.createElement("a")
-        a.href = URL.createObjectURL(blob)
-        a.download = "schemes.json"
-        a.click()
-    }
-
-    downloadJSON()
 
 })

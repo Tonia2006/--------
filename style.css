@@ -103,7 +103,7 @@ button{
 
 .block button:hover{
     background-color: #ffe4e1;
-    width: 85px;
+    scale: 1;
     
 }
 
