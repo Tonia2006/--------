@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         schemes.forEach(create_block)
     }
 
-    deleteBtn.addEventListener("click", () => {
+    del.addEventListener("click", () => {
         deleteScheme(scheme)
     })
 
