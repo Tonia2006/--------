@@ -73,9 +73,13 @@ input:focus{
     transition: 1s;
 }
 
+.card img{
+    height: 230px;
+    border: 1px ;
+}
+
 .card:hover{
-    height: 400px;
-    width: 260px;
+    scale: 1.1;
 }
 
 button{
@@ -112,6 +116,7 @@ button{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #type{
