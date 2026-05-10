@@ -49,6 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const del = document.createElement('button')
         del.classList.add("delete")
         del.textContent = "Видалити"
+        del.addEventListener("click", () => {
+            deleteScheme(scheme)
+        })
 
         block.appendChild(name)
         block.appendChild(img)
@@ -76,9 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
         schemes.forEach(create_block)
     }
 
-    del.addEventListener("click", () => {
-        deleteScheme(scheme)
-    })
+    
 
     const findBtn = document.querySelector(".find")
 

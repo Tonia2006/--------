@@ -104,7 +104,8 @@ button{
 .block button:hover{
     background-color: #ffe4e1;
     scale: 1;
-    
+    transition: 1s;
+
 }
 
 .card button:hover{
